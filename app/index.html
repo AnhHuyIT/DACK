@@ -22,57 +22,27 @@
   <script src="app.js"></script>  
 </head>
 <body ng-controller="mycontroller" ng-init="checked=false">
-  <div class="animated-class col-md-8 col-md-offset-2">
-  
-     <!--input type="checkbox" ng-model="checked">
-    <span class="animated-class" ng-hide="checked">Here I am!</span>
-    <img ng-hide="checked" class="animated-class" ng-src="1.jpg" >  
-<div class="btn-group" style="display: block; text-align: center; margin-bottom: 10px">
-        <button ng-click="article = '1';" class="btn btn-primary">Pitch</button>
-        <button ng-click="article = '2';" class="btn btn-primary">Why</button>
-        <button ng-click="article = '3';" class="btn btn-primary">MVVM</button>
-        <button ng-click="article = '4';" class="btn btn-primary">Ebook</button>
-      </div!-->
-
-    <div class="switch" style="width: 1000px; height: 170px;" ng-switch on="article">
-          <div class="animate-switch" ng-switch-when="1">
-          <table style="height: 170px; width:700px;">
-          <tr><td style="width: 170px;">
-             <img src="1.jpg" alt="AngularJS Logo" style="width: 150px; height: 150px;" />
-            </td>
-            <td style="width: 470px;">
-              <h2>The AngularJS Elevator Pitch</h2>
-              <blockquote>
-                 <p style="font-size: 13px">"AngularJS is a new, powerful, client-side technology that provides a way of 
-                 accomplishing really powerful things in a way that embraces and extends HTML, 
-                 CSS and JavaScript, while shoring up some of its glaring deficiencies. It is 
-                 what HTML would have been, had it been built for dynamic content."</p>
-                <small><cite title="Net Tuts+"><a href="http://net.tutsplus.com/tutorials/javascript-ajax/5-awesome-angularjs-features/">Net Tuts+</a></cite></small>
-            </blockquote>
-             </td>
-             </tr>
-             </table>
-          </div>
-          <div class="animate-switch" ng-switch-when="2">
-            <table style="height: 170px;">
-          <tr><td style="width: 170px;">
-             <img src="1.jpg" alt="AngularJS Coffe" style="width: 150px; height: 150px;" />
-            </td>
-            <td style="width: 470px;">
-              <h2>Why AngularJS?</h2>
-              <blockquote>
-                 <p style="font-size: 13px">"HTML is great for declaring static documents, but 
-                 it falters when we try to use it for declaring dynamic views in web-applications. 
-                 AngularJS lets you extend HTML vocabulary for your application. 
-                 The resulting environment is extraordinarily expressive, readable, and quick to develop."</p>
-                <small><cite title="AngularJS"><a href="http://angularjs.org/">AngularJS</a></cite></small>
-            </blockquote>
-             </td>
-             </tr>
-             </table>
-          </div>
-</div>     
-
+  <div class="container col-md-8 col-md-offset-4">
+    <div class="switch" ng-switch on="article">
+      <div class="animate-switch" ng-switch-when="1">
+        <img src="images/banhgaocay.jpg">
+      </div>
+      <div class="animate-switch" ng-switch-when="2">
+        <img src="images/banhxeo.jpg">
+      </div>
+      <div class="animate-switch" ng-switch-when="3">
+        <img src="images/cua.jpg">
+      </div>
+      <div class="animate-switch" ng-switch-when="4">
+        <img src="images/nhongtam.jpg">
+      </div>
+      <div class="animate-switch" ng-switch-when="5">
+        <img src="images/thitchuangot.jpg">
+      </div>
+      <div class="animate-switch" ng-switch-when="6">
+        <img src="images/vitquay.jpg">
+      </div>
+    </div>     
   </div>
 </body>
 </html>
