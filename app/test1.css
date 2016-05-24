@@ -1,0 +1,14 @@
+.animated-class.ng-hide-add {
+    transition: all linear 2s;
+   -webkit-transition: all linear 2s;
+    opacity: 1;
+}
+
+
+.animated-class.ng-hide-add.ng-hide-add-active {
+    opacity: 0;
+}
+.animated-class{
+  width: 100px;
+    height: 100px;
+}
