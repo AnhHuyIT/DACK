@@ -13,7 +13,6 @@
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
   <link rel="stylesheet" href="app.css">
-  <link rel="stylesheet" href="test1.css">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script> 
   <script src="bower_components/angular/angular.js"></script>  
   <script src="bower_components/angular-route/angular-route.js"></script>
@@ -22,6 +21,7 @@
   <script src="app.js"></script>  
 </head>
 <body ng-controller="mycontroller" ng-init="checked=false">
+<div >
   <div class="container col-md-8 col-md-offset-4">
     <div class="switch" ng-switch on="article">
       <div class="animate-switch" ng-switch-when="1">
@@ -44,5 +44,6 @@
       </div>
     </div>     
   </div>
+</div>
 </body>
 </html>
